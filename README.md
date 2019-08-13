@@ -26,7 +26,7 @@ npm install
 
 ### Import DB
 
-- create a new data base and name it **warranties**,
+- create new DB and name it **warranties**,
 - import [public/data/warranties.sql](public/data/warranties.sql) into it
 - now you should have **products** table inside with few examples
 
