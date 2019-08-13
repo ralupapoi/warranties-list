@@ -164,6 +164,7 @@ const Warranties = {
             expireDate
         });
         this.display(this.list);
+        this.resetEdit();
     },
 
     inlineEdit: function(id, name, purchaseDate, expireDate) {
@@ -173,7 +174,10 @@ const Warranties = {
         item.expireDate = expireDate;
 
         this.display(this.list);
+        this.resetEdit();
+    },
 
+    resetEdit: function() {
         this.EditID = '';
         document.querySelector('[name=name]').value = '';
         document.querySelector('[name=purchaseDate]').value = '';
