@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Warranties</title>
-    <link rel='stylesheet' href='stylesheets/style.css' />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-    
-    <h1>Warranties</h1>
-    
-    <div style="padding-bottom: 5px">
-      <input type="text" id="search" placeholder="Search"><label for="search">&#128270;</label>
-    </div>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Purchase Date</th>
-          <th>Expire Date</th>
-          <th>Product Id</th>
-          <th>Bill Number</th>
-          <th style="width: 30px"></th>
-        </tr>
-      </thead>
-      <tbody>
 
-      </tbody>
-      <tfoot>
-        <tr>
-          <td><input type="text" name="name" placeholder="Name"/></td>
-          <td><input type="text" name="purchaseDate" placeholder="Purchase Date"/></td>
-          <td><input type="text" name="expireDate" placeholder="Expire Date"/></td>
-          <td><input type="text" name="productId" placeholder="Product Id"/></td>
-          <td><input type="text" name="billNumber" placeholder="Bill Number"/></td>
-          <td><button onclick="Warranties.save()">Save</button></td>
-        </tr>
-      </tfoot>
-    </table>
+<head>
+  <title>Warranties</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='stylesheets/style.css' />
+</head>
 
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+<body>
+  <h1>Warranties</h1>
+
+  <div style="padding-bottom: 5px">
+    <input type="text" id="search" placeholder="Search"><label for="search"><i class="fa fa-search"></i></label>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Purchase Date</th>
+        <th>Expire Date</th>
+        <th>Product Id</th>
+        <th>Bill Number</th>
+        <th style="width: 30px"></th>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+    <tfoot>
+      <tr>
+        <td class="name"><input type="text" name="name" placeholder="Name" /></td>
+        <td><input type="text" name="purchaseDate" placeholder="Purchase Date" /></td>
+        <td><input type="text" name="expireDate" placeholder="Expire Date" /></td>
+        <td><input type="text" name="productId" placeholder="Product Id" /></td>
+        <td><input type="text" name="billNumber" placeholder="Bill Number" /></td>
+        <td class="button"><button onclick="Warranties.save()">Save</button></td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="javascripts/index.js"></script>
-  </body>
+</body>
+
 </html>

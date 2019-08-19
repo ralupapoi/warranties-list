@@ -1,15 +1,22 @@
-body {
+body {  
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Montserrat", sans-serif;
+  background-color: #C3D2F5;
+}
+
+h1 {
+  text-align: center;
+  font-weight: lighter
 }
 
 a {
-  color: #00B7FF;
+  color: #5E71E4;
 }
 
 #search {
   padding: 4px;
   width: 300px;
+  margin: 0;  
 }
 
 table {
@@ -22,10 +29,10 @@ th, td {
   padding: 8px;
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(even){background-color: #F2F4FB}
 
 th {
-  background-color: #00aeef;
+  background-color: #071D49;
   color: white;
 }
 
@@ -33,3 +40,10 @@ td input {
   width: 100%;
   padding: 4px;
 }
+
+button {
+  color: #fff;
+  background-color:  #5E71E4;
+  padding: 4px 8px 4px 8px;
+}
+

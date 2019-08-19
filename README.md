@@ -4,7 +4,7 @@ A simple app using node & express for managing warranties
 
 ## Live Preview
 
-Open [index.html](https://nmatei.github.io/warranties-list/public/index.html)
+Open [index.html](https://github.com/ralupapoi/warranties-list/public/index.html) 
 
 ## Content
 
@@ -19,7 +19,7 @@ Open [index.html](https://nmatei.github.io/warranties-list/public/index.html)
 ## Setup
 
 ```
-git clone git@github.com:nmatei/warranties-list.git
+git clone git@github.com:ralupapoi/warranties-list.git
 cd warranties-list
 npm install
 ```
