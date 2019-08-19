@@ -3,6 +3,7 @@
   <head>
     <title>Warranties</title>
     <link rel='stylesheet' href='stylesheets/style.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
     
@@ -17,6 +18,8 @@
           <th>Name</th>
           <th>Purchase Date</th>
           <th>Expire Date</th>
+          <th>Product Id</th>
+          <th>Bill Number</th>
           <th style="width: 30px"></th>
         </tr>
       </thead>
@@ -28,6 +31,8 @@
           <td><input type="text" name="name" placeholder="Name"/></td>
           <td><input type="text" name="purchaseDate" placeholder="Purchase Date"/></td>
           <td><input type="text" name="expireDate" placeholder="Expire Date"/></td>
+          <td><input type="text" name="productId" placeholder="Product Id"/></td>
+          <td><input type="text" name="billNumber" placeholder="Bill Number"/></td>
           <td><button onclick="Warranties.save()">Save</button></td>
         </tr>
       </tfoot>

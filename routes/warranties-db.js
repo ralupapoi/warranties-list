@@ -12,7 +12,11 @@ const pool = mysql.createPool({
 router.get('/', function(req, res, next) {
   pool.getConnection(function(err, connection) {
     if(err) throw err;
-    const sql = `SELECT id, name, DATE_FORMAT(purchaseDate, "%Y-%m-%d") as purchaseDate, DATE_FORMAT(expireDate, "%Y-%m-%d") as expireDate FROM products`;
+    const sql = `SELECT id, name, 
+    DATE_FORMAT(purchaseDate, "%Y-%m-%d") as purchaseDate, 
+    DATE_FORMAT(expireDate, "%Y-%m-%d") as expireDate, 
+    productId, billNumber 
+    FROM products`;
     connection.query(sql, function(err, results) {
       if(err) throw err;
       connection.release();
@@ -39,11 +43,14 @@ router.post('/create', function(req, res, next) {
   const name = req.body.name;
   const purchaseDate = req.body.purchaseDate;
   const expireDate = req.body.expireDate;
+  const productId = req.body.productId;
+  const billNumber = req.body.billNumber;
+  
   pool.getConnection(function(err, connection) {
     if(err) throw err;
-    const sql = `INSERT INTO products (id, name, purchaseDate, expireDate) VALUES (NULL, ?, ?, ?);`;
+    const sql = `INSERT INTO products (id, name, purchaseDate, expireDate, productId, billNumber) VALUES (NULL, ?, ?, ?, ?, ? );`;
     connection.query(sql, [
-        name, purchaseDate, expireDate
+        name, purchaseDate, expireDate, productId, billNumber,
     ], function(err, results) {
       if(err) throw err;
       const id = results.insertId;
@@ -61,12 +68,14 @@ router.put('/update', function(req, res, next) {
   const name = req.body.name;
   const purchaseDate = req.body.purchaseDate;
   const expireDate = req.body.expireDate;
+  const productId = req.body.productId;
+  const billNumber = req.body.billNumber;
 
   pool.getConnection(function(err, connection) {
     if(err) throw err;
-    const sql = `UPDATE products SET name=?, purchaseDate=?, expireDate=? WHERE id=?`;
+    const sql = `UPDATE products SET name=?, purchaseDate=?, expireDate=?, productId=?, billNumber=? WHERE id=?`;
     connection.query(sql, [
-        name, purchaseDate, expireDate, id
+        name, purchaseDate, expireDate, productId, billNumber, id
     ], function(err, results) {
       if(err) throw err;
       connection.release();

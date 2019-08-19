@@ -1,26 +1,90 @@
 [
   {
     "id": 1,
-    "name": "Sony TV",
+    "name": "SONY BRAVIA KD",
     "purchaseDate": "2017-08-12",
-    "expireDate": "2021-08-12"
+    "expireDate": "2021-08-12",
+    "productId": "55XF9005",
+    "billNumber": "45666GHKL1"
   },
   {
     "id": 2,
-    "name": "iPhone",
-    "purchaseDate": "2018-09-12",
-    "expireDate": "2020-09-12"
+    "name": "iPhone X",
+    "purchaseDate": "2018-09-13",
+    "expireDate": "2021-09-13",
+    "productId": "MQAF2GH/A",
+    "billNumber": "F17VV42ZJCL8"
   },
   {
-    "id": 3,
-    "name": "Dell laptop",
-    "purchaseDate": "2018-03-11",
-    "expireDate": "2022-03-11"
+    "id": 24,
+    "name": "Laptop Asus",
+    "purchaseDate": "2017-08-12",
+    "expireDate": "2027-08-12",
+    "productId": "N550JK-DS556D",
+    "billNumber": "EBN0CY404665476"
   },
   {
-    "id": 4,
-    "name": "Boxe Wifi",
-    "purchaseDate": "2019-12-11",
-    "expireDate": "2021-12-11"
+    "id": 33,
+    "name": "Masina de spalat MYRIA",
+    "purchaseDate": "2018-01-04",
+    "expireDate": "2025-02-13",
+    "productId": "MY1508",
+    "billNumber": "DFGJKCMN99"
+  },
+  {
+    "id": 34,
+    "name": "Consola SONY PlayStation 4 Slim",
+    "purchaseDate": "2019-04-22",
+    "expireDate": "2022-04-12",
+    "productId": "PS42291",
+    "billNumber": "STA99911"
+  },
+  {
+    "id": 35,
+    "name": "Robot de bucatarie KENWOOD",
+    "purchaseDate": "2017-03-11",
+    "expireDate": "2023-03-12",
+    "productId": "0W20011138",
+    "billNumber": "WEQASD45"
+  },
+  {
+    "id": 36,
+    "name": "CD PLAYER CDJ NXS2",
+    "purchaseDate": "2017-09-08",
+    "expireDate": "2022-03-11",
+    "productId": "CDJNXS112233",
+    "billNumber": "PIO23NE3R1111"
+  },
+  {
+    "id": 37,
+    "name": "Mouse Gaming LOGITECH",
+    "purchaseDate": "2019-05-02",
+    "expireDate": "2025-05-03",
+    "productId": "G102 ",
+    "billNumber": "ONCMAL112314"
+  },
+  {
+    "id": 38,
+    "name": "Scaun gaming MYRIA",
+    "purchaseDate": "2019-04-03",
+    "expireDate": "2024-12-12",
+    "productId": "MG7403RD",
+    "billNumber": "DD12134DAASD"
+  },
+  {
+    "id": 39,
+    "name": "Camera foto DSLR NIKON",
+    "purchaseDate": "2017-03-03",
+    "expireDate": "2023-02-01",
+    "productId": "D3500",
+    "billNumber": "KKADNVGA12"
+  },
+  {
+    "id": 40,
+    "name": "Anvelopa vara BARUM",
+    "purchaseDate": "2019-04-04",
+    "expireDate": "2024-11-02",
+    "productId": "KLQJ2",
+    "billNumber": "12903KKS"
   }
 ]
